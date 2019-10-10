@@ -2,17 +2,39 @@
 <head>
   <title>Calculator</title>
   <link rel="stylesheet" href="stylesheet/main.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 </head>
 
 <body>
 
   <h1>Calculator</h1>
 
+have array for input
+push pressed digit into array
+each time user press +-*/, join the digits into a single num
 
 
+  <div class="calculator">
+    <button value="1" type="number" class="digit">1</button>
+    <button value="2" type="number" class="digit">2</button>
+    <button value="3" type="number" class="digit">3</button>
+    <button value="4" type="number" class="digit">4</button>
+    <button value="5" type="number" class="digit">5</button>
+    <button value="6" type="number" class="digit">6</button>
+    <button value="7" type="number" class="digit">7</button>
+    <button value="8" type="number" class="digit">8</button>
+    <button value="9" type="number" class="digit">9</button>
+    <button value="0" type="number" class="digit">0</button>
+    <button value="+" type="operator" class="operator">+</button>
+    <button value="-" type="operator" class="operator">-</button>
+    <button value="*" type="operator" class="operator">*</button>
+    <button value="/" type="operator" class="operator">/</button>
+  </div>
+  <button value="=" type="operator" id="equal" onclick="getTotal()">=</button>
 
+  <span id="total"></span><span id="op"></span>
 
+    <button value="clear" onclick="document.location.reload(true)">clear</button>
   <script src="js/scripts.js"></script>
 </body>
 </html>
